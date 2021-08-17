@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap {
+            width: 80%; margin: 0 auto; 
+            border: 1px solid #777;
+            position: relative; /*부모릴레이티브*/
+            padding: 10px;
+            }
+
+        .wrap-img {position: absolute;
+        left: 10px;
+        top: 10px;
+        } /*이미지에 포자션*/
+        
+        .wrap-img img {
+            width: 50px; }
+
+        .wrap-text textarea {
+            width: 100%; height: 200px; 
+            box-sizing: border-box; 
+            resize: vertical; /*vertical로만 resize되는 것을 허용하겠다.*/
+            padding: 10px;
+
+        } 
+            
+
+        .wrap-text , .wrap-btn {padding-left: 60px; }
+
+        .wrap-btn {overflow: hidden;}
+        /*왼쪽 , 오른쪽 정렬 위의 부모에게 overflow hidden 해주기기*/
+        .left {float: left;}
+        .right {float: right;}
+
+        /*세로로 정렬 */
+        .left > input {display: block; width: 100px;}
+
+
+        /*------------하단 스타일*--------------*/
+
+    .wrap2 {
+        width: 80%; height: 50px;
+        margin: 0 auto;
+        border: 1px solid #777;
+        padding: 10px;
+        position: relative;
+        
+        
+    }
+
+    .wrap2 img {
+        width: 50px;
+        position: absolute;
+       left: 10px;
+       top: 10px;
+    }
+
+    .btn2 {overflow: hidden;}
+    .left2 { float: left; padding-left: 60px;  }
+    .right2 {float: right; }
+
+    p {padding: 0; margin: 0;}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+
+        <div class="wrap-img"> <!--이미지영역-->
+            <img src="img/bgimg.png" >
+        </div>
+
+        <div class="wrap-text"> <!--텍스트영역-->
+            <textarea > .... </textarea>
+        </div>
+        
+        <div class="wrap-btn"> <!--버튼영역-->
+
+            <div class="left">
+                <input type="text">
+                <!--마진 바깥 여백 3px 주기-->
+                <input type="text" style="margin-top: 3px;">
+
+            </div>
+
+            <button class="right">등록하기</button>
+
+
+        </div> 
+
+    </div>
+
+
+    <div class="wrap2">
+        <div class="img"> <!--이미지영역-->
+            <img src="img/bgimg.png" >
+         </div>
+ 
+         <div class="btn2"><!--내용 + 버튼-->
+
+            <div class="left2">
+                <p><strong>제목</strong></p>
+                <p>내용</p>
+            </div>
+
+             <button class="right2">삭제</button>
+             <button class="right2">수정</button>
+         </div>
+ 
+    </div>
+
+
+
+    
+    
+    
+</body>
+</html>

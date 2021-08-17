@@ -1,0 +1,30 @@
+.bar {
+    background-color:white;
+    text-align: center;
+}
+.bar > a {
+    padding: 0 20px;
+}
+
+.list > ul > li {
+    display: inline-block;
+    width: 140px;
+    margin-top: 20px;
+    
+}
+.list > ul >li > a{
+    text-decoration: none;
+    color: black;
+}
+
+.list > ul {
+    text-align: center;
+}
+
+@media(max-width:992px) {
+    .bar {
+        display: none;
+    }
+}
+
+

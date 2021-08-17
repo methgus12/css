@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .wrap {
+            width: 80%;
+            margin: 0 auto;
+            border:  1px solid #777;
+            overflow: hidden;
+
+        }
+
+        .left {
+            float: left; width: 50%;
+        }
+
+        .right {
+            float: right; width: 50%;
+            border: 1px solid #777;
+            box-sizing: border-box;
+
+        }
+
+        .price , .order {overflow: hidden;}
+
+
+       .p-left {float: left;}
+       .p-right {float: right;}
+       .order > button {width:50%; padding: 10px;}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrap"> <!--밖-->
+
+        <div class="left">photo</div> <!--사진-->
+
+        <div class="right"> <!--ㄴㅐ용영역-->
+        <div><!--제목 ,내용-->
+            <div>title</div> <!--제목-->
+
+            <div>content</div><!--ㄴㅐ용-->  
+
+
+        </div>   
+        <div > <!--버튼영역-->
+            <div class="price"> <!--가격-->
+                <strong class="p-left">가격</strong>
+                <strong class="p-right">10000원</strong>
+
+            </div>
+
+            <div class="order"> <!--버튼-->
+                <button class="p-left">장바구니</button>
+                <button class="p-right">구매하기</button>
+
+
+
+            </div>
+            
+            
+        </div> 
+            
+            
+            
+        </div>
+
+<!--플롯 중지하고 싶으면 clear: both;-->
+<!--<div style="clear: both;"> 음 ..</div>
+    -->
+
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,10 @@
+.listbox {
+    margin: 0 auto;
+}
+
+.listbox > div >a {
+    color: black;
+}
+.listbox > div {
+    margin-top: 50px;
+}

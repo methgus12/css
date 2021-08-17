@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image:url("img/bg_grid.jpg");
+        }
+
+        p {
+            background-color :lightskyblue;
+            width: 600px;
+            height: 300px;
+            border: 1px slid #777;
+            
+            /*패딩의 방식*/
+
+            padding: 50px; /*위 , 오른쪽 아래 왼쪽 전부다*/
+
+            /*위 오른쪽 아래 왼쪽 : 즉 시계방향이라 생각하면 쉬움*/
+            padding: 50px 50px 50px 50px ; 
+
+            /*아래와 같이 두개만 쓰는 경우는 경우는 앞 (위아래) , 뒤(좌우)*/
+            padding: 50px 50px;
+
+            /*각각 하나씩 따로 쓴다면~?*/
+
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <p>
+        패딩이란?? 무엇인가
+        윤곽을 기준으로 안쪽여백입니다. 패딩은 박스의 크기에 포함이 되고 겹치지않습니다. 
+
+        width + padding좌우+ border = box
+        보더도 , 패딩도 실제 박스크기에 포함이됨
+
+    </p>
+    
+</body>
+</html>

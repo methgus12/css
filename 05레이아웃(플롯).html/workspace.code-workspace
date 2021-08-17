@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../03백그라운드"
+		},
+		{
+			"path": "../04박스(마진_패딩)"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "04박스(마진_패딩)"
+	}
+}

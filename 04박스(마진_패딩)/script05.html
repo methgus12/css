@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*디자인 시작전에 모든요소에 여백을 0으로 */
+        * {padding: 0px; margin: 0px;}
+
+        ul , li {list-style-type: none;}
+
+        .box {background-color: black;}
+
+        .box > ul > li a {color:white; display: block; width:50px;height: 50px; }
+
+        .inner {
+            width: 1000px;
+            margin: 50px auto; /*앞: 위아래  뒤 : 좌우 적용*/
+
+            
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class ="box"> 
+            <ul>
+                <li><a>메뉴</a></li>
+                <li><a>메뉴</a></li>
+                <li><a>메뉴</a></li>
+
+            </ul>
+
+        </nav>
+      
+    </header>
+    
+    <section>
+        <div class="inner">
+            <img src="img/coupang.png" alt="슬라이더1">
+            
+
+        </div>
+
+        <div class="inner">
+            <h2>오늘의 발견</h2>
+            <div class="content">
+                <div>   
+                    ......
+                </div>
+
+            </div>
+            
+
+        </div>
+    </section>
+</body>
+</html>

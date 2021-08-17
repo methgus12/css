@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .wrap {
+            border: 1px solid #777;
+            width: 50%;
+            margin: 0 auto;
+
+        }
+
+        .top , .mid , .bot {
+            border: 1px solid #777;
+        }
+
+        .mid-wrap {
+            overflow: hidden;
+
+        } 
+
+        .left {
+            width: 50%;
+            float: left;
+            border: 1px solid #777;
+            box-sizing: border-box;
+           
+        }
+
+
+
+       
+        
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+   <div class="top">탑</div>
+   <div class="mid">
+      <div class ="mid-wrap">  <!--overflow : hidden-->
+          <div class ="left">중간패딩 위아래 패딩 20px</div>
+          <div class="left">중간패딩 위아래 패딩 20px</div>
+      </div>
+      </div>
+   <div class="bot">아래</div>
+</div>
+
+
+</body>
+</html>

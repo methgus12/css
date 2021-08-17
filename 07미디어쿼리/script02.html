@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*전체화면에서 상자 6개보이게,
+         태블릿화면에서는 상자 4개 
+         폰에서는 상자 2개보이게 미디어쿼리로 조정해보기*/
+
+         .box {width: 80%; margin: 0 auto; overflow: hidden; }
+
+         .inner {width: 16.6666%; float: left; border: 1px solid#777; box-sizing: border-box;}
+        
+         
+         /*앱 화면 적용*/
+         @media (max-width : 767px) {
+             .inner {width: 50%; float: left;}
+
+         }
+         /*태블릿 영역적용*/
+         @media (max-width : 1299px) and (min-width: 768px) {
+             .inner {width: 25%; float: left;}
+         }
+
+         @media (min-width:1300px) {
+            .inner {width: 16.6666%; float: left;}
+
+         }
+
+
+
+    </style>
+</head>
+<body>
+
+    <h2>미디어쿼리를 이용한 그리드</h2>
+    <div class="box">
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+
+    </div>
+    
+</body>
+</html>

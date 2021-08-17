@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    
+    body {
+        background-image: url("img/bg_gird.jpg");
+
+
+    }
+    p {
+        width: 600px;
+        height: 300px;
+        border: 1px solid #777;
+        background-color: lightblue;
+        
+        /*위 오른쪽 왼쪽 아래 전부다*/
+        margin: 50px; 
+        
+        /*시계방향으로 하나씩 위 오른 아래 왼*/
+        margin: 20px 20px 20px 20px;
+
+        /*두개만 위아래 , 왼오*/
+        margin: 20px 10px;
+
+        /*하나씩 개별적으로도 가능*/
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+        /*마진과 마진의 바깥 여백은 겹칩니다*/
+        
+        /*margin:0 auto => 상자가 중앙으로감 박스의 크기가 지정이되어있어야만 가능*/
+        
+        .ct {
+            margin:0 auto;
+        }
+
+
+
+
+    
+
+</style>
+</head>
+<body>
+    <p>
+        마진은 무엇인가?
+        마진은 요소의 바깥여백 . 즉 테두리와 다른 박스사이의 여백입니다
+        단 , 마진과 마진은 겹칩니다
+
+        박스의 가로크기 width + margin + border 
+    </p>
+
+    <p class ="ct">
+        마진은 무엇인가?
+        마진은 요소의 바깥여백 . 즉 테두리와 다른 박스사이의 여백입니다
+        단 , 마진과 마진은 겹칩니다
+    </p>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+.homeBtn{
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    left: 35%;
+    top: 300px;
+}
+
+.homeBtn1 , .homeBtn2{
+    margin-right: 20px;
+    padding: 16px 15px;
+    width: 20%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+
+}
+
+.homeBtn1{
+    
+    background-color: white;
+}
+
+.homeBtn2{
+    color: black;
+    background-color: #9e2c2c;
+}
+
+/*모달*/
+
+.loginModal {
+    background-color: white;
+}
+.modalBtn1 , .modalBtn2{
+    color: black;
+    background-color: #9e2c2c;
+    height: 50px;
+    width: 565px;
+}
+
+.modalBtn1:hover{
+    background-color: black;
+    color: white;
+}
+
+.modalInputLogin{
+    height: 40px;
+    margin-top: 10px;
+}
+
+
+

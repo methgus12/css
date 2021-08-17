@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../gentlemonster"
+		},
+		{
+			"path": "../../team"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "team"
+	}
+}

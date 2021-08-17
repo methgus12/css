@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*거의 고정으로 들어가는 코드*/
+        * {margin: 0; padding: 0; }
+        ul,li {list-style: none;}
+
+
+        section { margin-top: 160px;}
+        /*스크롤바가 생기게 하기위해 높이조정*/
+        body{height: 1000px;}
+
+        header {position: fixed; left: 0px; top: 0px; width: 100%; z-index: 50;} /* 포지션ㅇ 겹피는 경우 z-index값으로 위치결정*/
+
+        /*가운데 정렬*/
+        .logo {text-align: center; background-color: white;}
+        .menu {background-color: black; text-align: center;} 
+        .menu > li {display: inline-block;}
+        .menu > li > a {display: block; padding: 20px; color: white; text-decoration: none;}
+        .menu > li > a:hover {background-color: #777; }
+
+        /*sticky - 설정된 영역에 도달하기전에는 일반적인 형식으로 움직이다가 설정된 위치에 닿으면 fixed 됨
+
+        1.top , bottom, left ,right 중 한가지 옵션이 반드시 존재해야되고 (일반적으로 탑)
+        2.어떤 부모요소든 overflow : hidden 이 있으면 동작하지않는다.
+        3.top 속성에는 스크롤이 이동됬을때 , fixed되는 지점을 기록한다 
+        헤더가 고정이라면 헤더의 높이만큼 
+
+        
+        */
+        
+        
+        .inner1 {background-color: thistle; height: 500px;}
+        .inner2 {background-color: tomato;position: sticky; top: 160px; z-index:100;}
+        .inner3 {background-color: teal; height:1500px;}
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">  <!--이미지-->
+            <img src="img/bgimg.png">
+        </div>
+
+        <nav > <!--메뉴영역-->
+
+            <ul class="menu">
+                <li><a href ="#">메뉴</a></li>
+                <li><a href ="#">메뉴</a></li>
+                <li><a href ="#">메뉴</a></li>
+                <li><a href ="#">메뉴</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    
+    <section>
+        <div class="inner1">내용</div> 
+        <div class="inner2">스티키</div>
+        <div class="inner3"></div>
+    </section>
+
+    
+    
+</body>
+</html>

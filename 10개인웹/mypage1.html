@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- 부트스트랩 css파일참조 -->
+     <link rel="stylesheet" href="css/bootstrap.css">
+     <!-- 부트스트랩 js를 사용하기 위해서 jquery라이브러리 참조 -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+     <!-- 부트스트랩 js참조 -->
+     <script src="js/bootstrap.js"></script>
+      <!--개인 디자인-->
+      <link rel="stylesheet" href="css/basic.css">
+      <link rel="stylesheet" href="css/mypage.css">
+
+
+     <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+    * {
+    	font-family: 'Roboto Condensed', sans-serif;
+        }
+</style>
+
+
+<section>
+
+
+    <div class="container myBody">
+        <div class="row">
+            <div class="mytitle"><a href="">My page</a></div>
+
+
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#info1" class="glyphicon glyphicon-info-sign tab-title">내정보수정</a></li>
+
+                <li><a data-toggle="tab" href="#info2" class="glyphicon glyphicon-ok-sign tab-title">QR체크인</a></li>
+                
+                
+
+
+            </ul>
+
+            <div class="tab-content">
+                <div id="info1" class="tab-pane fade in active">
+                    <div class="info-title">
+                        <p>정보 수정</p>
+                    </div>
+
+                    <div class="tab-login">
+                        <form class="join">
+                            <div class="join-group">
+                                <label>ID</label>
+
+                                <input type="text" class="form-control " readonly name="">
+                            </div>
+
+
+                            <div class="join-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control" name="" id="userPw"
+                                    placeholder="8~16 길이의 영소문자를 이용한 패스워드를 입력하세요" style="margin-bottom: 5px;">
+                            </div>
+                            <span id=msgPw></span>
+
+                            <div class="join-group">
+                                <label>Password Check</label>
+                                <input type="password" class="form-control" name="" id="pwCheck"
+                                    style="margin-bottom: 5px;">
+                            </div>
+                            <span id=msgPw-c></span>
+
+                            <div class="join-group">
+                                <label>NickName</label>
+                                <input type="text" class="form-control" name="">
+                            </div>
+
+                            <div class="join-group">
+                                <label>Email</label>
+                                <input type="text" class="form-control" name="" placeholder="010XXXXXXXX">
+                            </div>
+
+             
+                            <div class="page-btn">
+                                <button type="button" class="btn  basicBtn2" data-toggle="modal" data-target="#myModal" style="outline: none;">Drop</button>
+                                <button type="submit" class="btn  basicBtn1" style="outline: none;">Modify</button>
+
+
+
+                            </div>
+
+            
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">회원 탈퇴</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>탈퇴 하시려면 비밀번호를 입력해주세요 </p>
+                                            <label>Password</label>
+                                            <input type="password" class="form-control" >
+            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: black; color: white; outline: none;" >Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                    </div>
+                    </form>
+                </div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</section>
+
+</head>
+<body>
+    
+</body>
+</html>

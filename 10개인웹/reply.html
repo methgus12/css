@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 css파일참조 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- 부트스트랩 js를 사용하기 위해서 jquery라이브러리 참조 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 부트스트랩 js참조 -->
+    <script src="js/bootstrap.js"></script>
+
+     <!--보드디자인-->
+     <link rel="stylesheet" href="css/board.css">
+         
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+ <style>
+     *{
+         font-family: 'Mate SC', serif;
+     }
+ </style>
+</head>
+<body>
+
+    <section>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="container">
+
+                    <form action="" class="w-group">
+                    
+                        <div class="w-box">
+                            <label>TITLE :</label>
+                            <input type="text" class="w-inner" readonly>  
+                        </div>
+                
+                        <div class="w-box">
+                           <label>ID :</label>
+                           <input type="text" class="w-inner"   readonly>
+                        </div>
+            
+                        <div class="w-box">
+                            <hr>
+                            <textarea class="textbox" rows="10" style="resize: none;"  readonly ></textarea>
+                        </div>
+
+                        <hr>
+
+                        <div class="w-box">
+                            <label>Answer :</label>
+                            <textarea   class="ansInner" rows="5" style="resize: none;"  readonly ></textarea>
+                         </div>
+            
+                        <div>
+                            <input type="button" value="List" class="btn board-btn" style="outline:none;" onclick="location.href='vanpSecret' ">
+                           
+                        </div>
+                    </form>
+                </div>
+
+               
+
+           </div>
+
+
+              
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,6 @@
+/* css 파일에서 css 파일을 import */
+
+@import url("commons.css");
+
+
+p {color: red;}

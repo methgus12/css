@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--
+        포지션 
+        앱솔 : 부모기반
+       릴레이: 내 기반
+       픽스드: 고정
+    -->
+
+    <style>
+        /*거의 고정으로 들어가는 코드*/
+        * {margin: 0; padding: 0; }
+        ul,li {list-style: none;}
+
+        /*스크롤바가 생기게 하기위해 높이조정*/
+        body{height: 1000px;}
+
+        header {position: fixed; left: 0px; top: 0px; width: 100%; z-index: 50;} /* 포지션ㅇ 겹피는 경우 z-index값으로 위치결정*/
+
+
+        /*가운데 정렬*/
+        .logo {text-align: center; background-color: white;}
+        .menu {background-color: black; text-align: center;} 
+        .menu > li {display: inline-block;}
+        .menu > li > a {display: block; padding: 20px; color: white; text-decoration: none;}
+        .menu > li > a:hover {background-color: #777; }
+
+        section { margin-top: 170px;}
+
+        /*사이드바 디자인*/
+
+        .side {
+            text-align: center;
+            position: fixed;
+            top: 200px;
+            right: 0px;
+            z-index: 30;
+        
+        }
+
+        .side-list li a {
+            display: block; padding: 20px ; 
+            background-color: #282828;
+            text-decoration: none;
+            color: white;
+            font-size: 0.5em; /*em : 부모저장 을 기준 :즉 0.5 em은 부모기준 절반*/
+            border-top: 1px solid #777;
+            letter-spacing: -1px; /*자간*/
+        
+        }
+    
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">  <!--이미지-->
+            <img src="img/bgimg.png">
+        </div>
+
+        <nav > <!--메뉴영역-->
+
+            <ul class="menu">
+                <li><a href ="#">메뉴</a></li>
+                <li><a href ="#">메뉴</a></li>
+                <li><a href ="#">메뉴</a></li>
+                <li><a href ="#">메뉴</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    
+    <section>
+        내용..
+    </section>
+
+    <aside class="side">
+
+        <ul class="side-list">
+            <li>
+                <a href="#">
+                <p>카톡</p>
+                <p>thevanppp</p>
+                </a></li>
+
+            <li><a href="#">전호번호</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </aside>
+</body>
+</html>

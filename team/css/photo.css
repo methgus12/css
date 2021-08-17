@@ -1,0 +1,41 @@
+.photoBody{
+    width: 100%;
+}
+.photoBox{
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.photoList{
+    float: left;
+    text-align: center;
+}
+.photo-content > .info > span {
+    display: block;
+}
+.photoIndex2{
+
+    height: 600px;
+}
+.photoTable{
+    margin-top: 50px;
+}
+
+.photoBno{
+    width: 10%;
+    text-align: center;
+}
+.photoMini{
+    width: 20%;
+    text-align: center;
+}
+.photoTitle{
+    width: 40%;
+}
+.photoAdd{
+    text-align: center;
+    width: 15%;
+}
+

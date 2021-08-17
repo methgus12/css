@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid #777;
+            overflow: hidden;
+        }
+        .list .inner {
+            float: left;
+            width: 25%;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+        .content {
+            overflow: hidden;
+        }
+        .left {
+            float: left;
+        }
+        .left > strong {
+            display: block;
+        }
+        .right {
+            float: right;
+        }
+        .clear {
+            clear: both; /* float를 해제 */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="list"> <!-- 바깥 상자 -->
+        <div class="inner"> <!-- 안쪽 상자 -->
+            <div> <!-- 이미자 영역 -->
+                <img src="img/bgimg.png">
+            </div>
+            <div class="content"> <!-- 내용 영역 -->
+                <div class="left"> <!-- 좌 -->
+                    <strong>좌</strong>
+                    <strong>좌</strong>
+                    <strong>좌</strong>
+                </div>
+                <div class="right"> <!-- 우 -->
+                    <strong>우</strong>
+                </div>
+                <div class="clear">
+                    float해제
+                </div>
+                <div>
+                    블럭...
+                </div>
+            </div>
+        </div> 
+        <div class="inner"> <!-- 안쪽 상자 -->
+            <div> <!-- 이미자 영역 -->
+                <img src="img/bgimg.png">
+            </div>
+            <div class="content"> <!-- 내용 영역 -->
+
+            </div>
+        </div> 
+        <div class="inner"> <!-- 안쪽 상자 -->
+            <div> <!-- 이미자 영역 -->
+                <img src="img/bgimg.png">
+            </div>
+            <div class="content"> <!-- 내용 영역 -->
+
+            </div>
+        </div> 
+        <div class="inner"> <!-- 안쪽 상자 -->
+            <div> <!-- 이미자 영역 -->
+                <img src="img/bgimg.png">
+            </div>
+            <div class="content"> <!-- 내용 영역 -->
+
+            </div>
+        </div> 
+    </div>
+
+</body>
+</html>

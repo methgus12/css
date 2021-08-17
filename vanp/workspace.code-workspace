@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../10개인웹"
+		},
+		{
+			"path": "../gentlemonster"
+		},
+		{
+			"path": "../team"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "10개인웹"
+	}
+}
